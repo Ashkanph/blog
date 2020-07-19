@@ -19,8 +19,9 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 17px/1.4 $helvetica;
   color: $darkGray;
+  text-align: justify;
 }
 
 .container {
@@ -283,7 +284,71 @@ footer {
   text-align: center;
 }
 
+@font-face {
+  font-family: 'vazir';
+  src: url("./fonts/vazir.woff");
+}
+
+.jdate {
+  font-size: 14px;
+}
+
+sup {
+    line-height: 0;
+    color: #b42121;
+}
+
+.reference-number {
+    line-height: 0;
+    color: #b42121;
+}
+
+
+.farsi-text {
+   direction: rtl;
+}
+
+.rtl {
+  direction: rtl;
+  * {
+    font-family: 'vazir';
+    &:not(h1), &:not(h2), &:not(h3), &:not(h4), &:not(h5), &:not(h6), &:not(.highlighter-rouge), .entry {
+      line-height: 35px;
+    }
+  }
+
+  .date, .site-description {
+    text-align: left;
+  }
+
+  .english-text {
+    direction: ltr;
+  }
+
+  .highlighter-rouge {
+    direction: ltr !important;
+    * {
+      line-height: 26px;
+    }
+  }
+
+  .post-tags {
+    direction: ltr;
+  }
+}
+
+.post-tags {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.cat-tag__date {
+  float: right;
+  font-size: 14px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
+// @import "highlights";
+@import "dark-highlights";
 @import "svg-icons";
