@@ -52,7 +52,7 @@ From "PROBLEMATA", "PRELIMINARY EXPECTORATION"<br>
 
 ---
 
-Tear and trembling<br>
+Fear and trembling<br>
 By SØREN KIERKEGAARD<br>
 English translation BY WALTER LOWRIE<br>
 
