@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dune messiah
+categories: [literature]
 tags: [from books]
 ---
 
